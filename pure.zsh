@@ -187,8 +187,8 @@ prompt_pure_preprompt_render() {
 	expanded_prompt="${(S%%)PROMPT}"
 
 	if [[ $1 == precmd ]]; then
-		# Initial newline, for spaciousness.
-		print
+		# No spaciousness for me thanks
+		# print
 	elif [[ $prompt_pure_last_prompt != $expanded_prompt ]]; then
 		# Redraw the prompt.
 		prompt_pure_reset_prompt
@@ -820,7 +820,7 @@ prompt_pure_setup() {
 		host                 242
 		path                 blue
 		prompt:error         red
-		prompt:success       magenta
+		prompt:success       cyan
 		prompt:continuation  242
 		suspended_jobs       red
 		user                 242
